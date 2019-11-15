@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Users</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Users</h1>
+	</header>
+	<main>
+  		<div class="preloader">
+			<div class="loader"></div>
+		</div>
+		<div class="sort_block">
+			<label for="select-sort">Sort by</label>
+			<select class="select-sort" id="select-sort">
+				<option value="hide">...</option>
+				<option value="first-name">First Name</option>
+				<option value="first-name-reverse">First Name Reverse</option>
+				<option value="last-name">Last Name</option>
+				<option value="last-name-reverse">Last Name Reverse</option>
+			</select>
+			<label for="input-number">start with the</label>
+			<input class="input-number" type="number" placeholder="1" id="input-number" min=0>
+			<label for="input-number" class="right">letter</label>
+		</div>
+		<ul class="users"></ul>
+	</main>	
+	<div class="fade"></div>
+	<div class="modal">
+		<span class="modal__close">&#10006;</span>
+		<h1 class="modal__name"></h1>	
+		<div class="modal__address">
+			<h2>Address</h2>
+			<p class="modal__address_street"><b>St: </b>2477 queen street</p>
+			<p class="modal__address_city"><b>City: </b>stoke-on-trent</p>
+			<p class="modal__address_state"><b>State: </b>devon</p>
+		</div>
+		<div class="modal__contacts">
+			<h2>Contacts</h2>
+			<p class="modal__contacts_email"><b>Mail: </b>sharon.gibson@example.com</p>
+			<p class="modal__contacts_phone"><b>Phone: </b>019467 12124</p>
+		</div>
+	</div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
